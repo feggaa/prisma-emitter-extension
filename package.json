@@ -1,17 +1,17 @@
 {
-  "name": "prisma-emitter-extension",
+  "name": "prisma-extension-emitter",
   "version": "1.2.1",
   "bin": {
     "prisma-emitter": "dist/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/feggaa/prisma-emitter-extension.git",
+    "url": "https://github.com/feggaa/prisma-extension-emitter.git",
     "directory": "packages/cli"
   },
-  "homepage": "https://github.com/feggaa/prisma-emitter-extension",
+  "homepage": "https://github.com/feggaa/prisma-extension-emitter",
   "author": "Laid Feggaa <laid.feggaa@gmail.com>",
-  "bugs": "https://github.com/feggaa/prisma-emitter-extension/issues",
+  "bugs": "https://github.com/feggaa/prisma-extension-emitter/issues",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

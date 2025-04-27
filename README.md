@@ -1,8 +1,8 @@
-# Prisma Emitter Extension
+# Prisma Extension Emitter
 
-[![npm version](https://img.shields.io/npm/v/prisma-emitter-extension)](https://www.npmjs.com/package/prisma-emitter-extension)
-[![npm downloads](https://img.shields.io/npm/dm/prisma-emitter-extension)](https://www.npmjs.com/package/prisma-emitter-extension)
-[![license](https://img.shields.io/npm/l/prisma-emitter-extension)](https://github.com/feggaa/prisma-emitter-extension/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/prisma-extension-emitter)](https://www.npmjs.com/package/prisma-extension-emittern)
+[![npm downloads](https://img.shields.io/npm/dm/prisma-extension-emitter)](https://www.npmjs.com/package/prisma-extension-emitter)
+[![license](https://img.shields.io/npm/l/prisma-extension-emitter)](https://github.com/feggaa/prisma-extension-emitter/blob/main/LICENSE)
 
 
 A lightweight Prisma extension for registering conditional listeners and emitting events on any model’s CRUD operations.
@@ -16,7 +16,7 @@ A lightweight Prisma extension for registering conditional listeners and emittin
 ## Installation
 
 ```bash
-npm install prisma-emitter-extension
+npm install prisma-extension-emitter
 ```
 > **Note:** Currently only the Prisma operations `create`, `update`, and `updateMany` support `emit` and listener emission.
 
@@ -24,7 +24,7 @@ npm install prisma-emitter-extension
 
 ```ts
 import { PrismaClient } from '@prisma/client';
-import { listenerExtensionConfig, prismaEventListener } from 'prisma-emitter-extension';
+import { listenerExtensionConfig, prismaEventListener } from 'prisma-extension-emitter';
 
 // 1) Extend the Prisma client
 export const prisma = new PrismaClient().$extends(
