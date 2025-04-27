@@ -1,0 +1,36 @@
+{
+  "name": "prisma-emitter-extension",
+  "version": "1.2.0",
+  "bin": {
+    "prisma-emitter": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feggaa/prisma-emitter-extension.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/feggaa/prisma-emitter-extension",
+  "author": "Laid Feggaa <laid.feggaa@gmail.com>",
+  "bugs": "https://github.com/feggaa/prisma-emitter-extension/issues",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.cli.json",
+    "prepare": "npm run build"
+  },
+  "files": ["dist"],
+  "peerDependencies": {
+    "@prisma/client": ">=4.0.0"
+  },
+  "dependencies": {
+    "@prisma/internals": "^4.0.0",
+    "yargs": "^17.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "@types/yargs": "^17.0.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
