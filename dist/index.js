@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.listeners = void 0;
 exports.prismaEventListener = prismaEventListener;
 exports.listenerExtensionConfig = listenerExtensionConfig;
+const utils_1 = require("./utils");
 // Listeners map: model name to array of configs
 exports.listeners = {};
 /**
@@ -45,7 +46,7 @@ function matches(config, args) {
     return where && data;
 }
 async function runListeners(model, args, result) {
-    const configs = exports.listeners[camelize(model)];
+    const configs = exports.listeners[(0, utils_1.camelizeIt)(model)];
     if (!configs)
         return;
     for (const cfg of configs) {

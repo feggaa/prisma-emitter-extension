@@ -1,1 +1,1 @@
-declare function camelize(str: string): string;
+export declare function camelizeIt(str: string): string;

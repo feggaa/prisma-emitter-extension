@@ -1,5 +1,5 @@
 import type { PrismaClient } from '@prisma/client';
-
+import { camelizeIt } from './utils';
 export type ListenerFunction<T> = (payload: {
   args: any;
   model: ModelNames;
@@ -59,7 +59,7 @@ function matches<T>(config: ListenerConfig<T>, args: any): boolean {
 }
 
 async function runListeners<T>(model: ModelNames, args: any, result: T) {
-  const configs = listeners[camelize(model)];
+  const configs = listeners[camelizeIt(model)];
   if (!configs) return;
   for (const cfg of configs) {
     if (matches(cfg, args)) {
