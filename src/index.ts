@@ -100,13 +100,13 @@ export function listenerExtensionConfig(): ExtensionConfig {
           if (doEmit) await runListeners(model, args, result);
           return result;
         },
-        async upsert({ args, query, model }: any) {
-          const doEmit = Boolean((args as any).emit);
-          delete (args as any).emit;
-          const result = await query(args);
-          if (doEmit) await runListeners(model, args, result);
-          return result;
-        },
+        // async upsert({ args, query, model }: any) {
+        //   const doEmit = Boolean((args as any).emit);
+        //   delete (args as any).emit;
+        //   const result = await query(args);
+        //   if (doEmit) await runListeners(model, args, result);
+        //   return result;
+        // },
       },
     },
   };
