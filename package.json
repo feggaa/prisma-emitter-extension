@@ -1,6 +1,6 @@
 {
   "name": "prisma-emitter-extension",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "bin": {
     "prisma-emitter": "dist/cli.js"
   },
@@ -32,5 +32,13 @@
     "@types/yargs": "^17.0.0",
     "@types/node": "^18.0.0",
     "typescript": "^5.0.0"
-  }
+  },
+  "keywords": [
+    "prisma",
+    "emitter",
+    "extension",
+    "events",
+    "prisma-plugin",
+    "listener"
+  ]
 }
